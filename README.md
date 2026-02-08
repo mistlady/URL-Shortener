@@ -31,28 +31,45 @@ This project is built using **Bun** and **TypeScript** for both the backend and 
 
 ```
 url-shortener/
-├── backend/                    # Backend application
+├── backend/                        # Backend application
 │   ├── src/
 │   │  ├── config/
-│   │  ├── models/          #M in MVC
+│   │  ├── models/
 │   │  ├── controllers/
+│   │  ├── tests/
+│   │  │   ├──integration/
+│   │  │   └── unit/
 │   │  ├── routes/
 │   │  ├── services/
 │   │  ├── middleware/
-│   │  └── index.ts
-│   ├── package.json
-│   ├── tsconfig.json
-│   └── README.md
+│   │  └── index.ts                   # Application entry point
+│   ├── bun.lock                      # Dependency lock file
+│   ├── package.json                  # Backend dependencies
+│   └── tsconfig.json                 # TypeScript configuration
 │
-├── frontend/                    # Frontend application
-│ ├── src/
-│ ├── package.json
-│ ├── tsconfig.json
-│ └── vite.config.ts
+├── frontend/                         # Frontend application
+│   ├── src/
+│   │  ├── assets/
+│   │  ├── components/
+│   │  ├── hooks/
+│   │  ├── styles/
+│   │  ├── App.tsx                    # Root component
+│   │  ├── index.css                  # Global styles
+│   │  └── main.tsx                   # Application entry
+│   ├── index.html                    # HTML template
+│   ├── package.json                  # Frontend dependencies
+│   ├── tsconfig.json                 # TypeScript configuration
+│   └── vite.config.ts                # Vite configuration
 │
-└── README.md
+└── README.md                         # This file
 
+```
 
+## Installation & Setup
 
+### 1. Clone the Repository
 
+```bash
+git clone https://github.com/mistlady/URL-Shortener
+cd URL-Shortener
 ```
